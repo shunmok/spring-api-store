@@ -10,7 +10,7 @@ import java.util.Collections;
 
 @AllArgsConstructor
 @Service
-public class UserServiceImpl implements UserDetailsService {
+public class UserDetailsServiceImpl implements UserDetailsService {
     private final UserRepository userRepository;
 
     @Override

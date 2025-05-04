@@ -1,4 +1,4 @@
 package com.codewithmosh.store.users;
 
-public class DuplicateUserException {
+public class DuplicateUserException extends RuntimeException {
 }

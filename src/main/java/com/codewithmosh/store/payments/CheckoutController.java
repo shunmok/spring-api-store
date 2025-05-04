@@ -1,13 +1,8 @@
-package com.codewithmosh.store.controllers;
+package com.codewithmosh.store.payments;
 
-import com.codewithmosh.store.dtos.CheckOutRequest;
-import com.codewithmosh.store.dtos.CheckoutResponse;
-import com.codewithmosh.store.dtos.ErrorDto;
-import com.codewithmosh.store.exceptions.CartEmptyException;
-import com.codewithmosh.store.exceptions.CartNotFoundException;
-import com.codewithmosh.store.exceptions.PaymentException;
-import com.codewithmosh.store.services.WebhookRequest;
-import com.codewithmosh.store.services.CheckoutService;
+import com.codewithmosh.store.common.ErrorDto;
+import com.codewithmosh.store.carts.CartEmptyException;
+import com.codewithmosh.store.carts.CartNotFoundException;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -24,7 +19,7 @@ public class CheckoutController {
 
 
     @PostMapping
-    public CheckoutResponse checkout(@Valid @RequestBody CheckOutRequest request) {
+    public CheckoutResponse checkout(@Valid @RequestBody CheckoutRequest request) {
            return checkoutService.checkout(request);
     }
 

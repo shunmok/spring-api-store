@@ -1,6 +1,5 @@
-package com.codewithmosh.store.repositories;
+package com.codewithmosh.store.orders;
 
-import com.codewithmosh.store.orders.Order;
 import com.codewithmosh.store.users.User;
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;

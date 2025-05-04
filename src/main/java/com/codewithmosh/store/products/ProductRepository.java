@@ -1,6 +1,5 @@
-package com.codewithmosh.store.repositories;
+package com.codewithmosh.store.products;
 
-import com.codewithmosh.store.entities.Product;
 import com.codewithmosh.store.users.User;
 import com.codewithmosh.store.users.UserRepository;
 import lombok.AllArgsConstructor;
@@ -21,16 +20,4 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
     @Query("select p from Product p")
     List<Product> findAllWithCategory();
 
-    @AllArgsConstructor
-    @Service
-    class AuthService {
-        private final UserRepository userRepository;
-
-        public User getCurrentUser() {
-            var authentication = SecurityContextHolder.getContext().getAuthentication();
-            var userId = (Long) authentication.getPrincipal();
-            return userRepository.findById(userId).orElse(null);
-        }
-
-    }
 }

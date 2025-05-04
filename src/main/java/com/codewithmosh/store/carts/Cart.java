@@ -1,4 +1,4 @@
-package com.codewithmosh.store.entities;
+package com.codewithmosh.store.carts;
 
 import com.codewithmosh.store.products.ProductNotFoundException;
 import com.codewithmosh.store.products.Product;

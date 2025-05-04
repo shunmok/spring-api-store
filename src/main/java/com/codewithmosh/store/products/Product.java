@@ -1,11 +1,9 @@
-package com.codewithmosh.store.entities;
+package com.codewithmosh.store.products;
 
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.math.BigDecimal;
-import java.util.HashSet;
-import java.util.Set;
 
 @Getter
 @Setter

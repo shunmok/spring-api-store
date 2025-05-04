@@ -1,9 +1,5 @@
-package com.codewithmosh.store.mappers;
+package com.codewithmosh.store.users;
 
-import com.codewithmosh.store.users.RegisterUserRequest;
-import com.codewithmosh.store.users.UpdateUserRequest;
-import com.codewithmosh.store.users.UserDto;
-import com.codewithmosh.store.users.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 

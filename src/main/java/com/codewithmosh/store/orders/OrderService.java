@@ -1,9 +1,6 @@
-package com.codewithmosh.store.services;
+package com.codewithmosh.store.orders;
 
-import com.codewithmosh.store.orders.OrderDto;
-import com.codewithmosh.store.orders.OrderNotFoundException;
-import com.codewithmosh.store.mappers.OrderMapper;
-import com.codewithmosh.store.repositories.OrderRepository;
+import com.codewithmosh.store.auth.AuthService;
 import com.codewithmosh.store.products.ProductRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.security.access.AccessDeniedException;
@@ -13,7 +10,7 @@ import java.util.List;
 @AllArgsConstructor
 @Service
 public class OrderService {
-    private final ProductRepository.AuthService authService;
+    private final AuthService authService;
     private final OrderRepository orderRepository;
     private final OrderMapper orderMapper;
 

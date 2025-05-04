@@ -1,9 +1,6 @@
-package com.codewithmosh.store.controllers;
+package com.codewithmosh.store.carts;
 
-import com.codewithmosh.store.dtos.*;
-import com.codewithmosh.store.exceptions.CartNotFoundException;
 import com.codewithmosh.store.products.ProductNotFoundException;
-import com.codewithmosh.store.services.CartService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -54,7 +51,7 @@ public class CartController {
     public CartItemDto updateCartItem(
             @PathVariable("cartId") UUID cartId,
             @PathVariable("productId") Long productId,
-            @Valid @RequestBody updateCartItemRequest request) {
+            @Valid @RequestBody UpdateCartItemRequest request) {
 
        return cartService.updateCartItem(cartId, productId, request.getQuantity());
     }
