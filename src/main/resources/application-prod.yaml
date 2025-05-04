@@ -1,4 +1,4 @@
 spring:
   datasource:
     url: ${SPRING_DATASOURCE_URL}
-websiteUrl: https://mystore.com
+websiteUrl: https://spring-api-store-9d7bd5e46db4.herokuapp.com
