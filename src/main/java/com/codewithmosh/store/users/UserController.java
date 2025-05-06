@@ -29,7 +29,7 @@ public class UserController {
         return userService.getUser(id);
     }
 
-    @CrossOrigin(origins = "*")
+    @CrossOrigin
     @PostMapping
     public ResponseEntity<?> registerUser(
             @Valid @RequestBody RegisterUserRequest request,
