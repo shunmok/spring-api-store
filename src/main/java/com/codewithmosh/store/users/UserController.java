@@ -10,7 +10,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import java.util.Map;
 
-@CrossOrigin(origins = "*")
+
 @RestController
 @AllArgsConstructor
 @RequestMapping("/users")
@@ -29,6 +29,7 @@ public class UserController {
         return userService.getUser(id);
     }
 
+    @CrossOrigin(origins = "*")
     @PostMapping
     public ResponseEntity<?> registerUser(
             @Valid @RequestBody RegisterUserRequest request,
