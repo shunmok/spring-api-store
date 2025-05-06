@@ -13,6 +13,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 import java.util.Map;
 import java.util.Set;
 
+@CrossOrigin
 @RestController
 @AllArgsConstructor
 @RequestMapping("/users")
